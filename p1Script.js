@@ -87,11 +87,14 @@ document
         score = 20;
         document.querySelector(".score").textContent = score;
       } else if (guessedNum > randomNumber) {
-        document.querySelector(".message").textContent = "📈 Too High";
+        document.querySelector(".message").textContent =
+          "📈 Too High, plz decrease your guess";
         score--;
         document.querySelector(".score").textContent = score;
       } else if (guessedNum < randomNumber) {
-        document.querySelector(".message").textContent = "📉 Too Low";
+        document.querySelector(
+          ".message"
+        ).textContent = `📉 Too Low, plz increase your guess`;
         score--;
         document.querySelector(".score").textContent = score;
       }
